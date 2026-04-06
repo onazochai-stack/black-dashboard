@@ -10,3 +10,8 @@ omega-complete.tar.gz
 ├── artifacts/command-center/src/      ← Dashboard app
 ├── package.json
 └── pnpm-workspace.yaml
+
+tar -xzf omega-complete.tar.gz
+pnpm install
+pnpm --filter @workspace/api-server run dev
+pnpm --filter @workspace/lead-system run dev
