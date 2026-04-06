@@ -1,4 +1,7 @@
-omega-complete.tar.gz
+tar -xzf omega-complete.tar.gz
+pnpm install
+pnpm --filter @workspace/api-server run dev
+pnpm --filter @workspace/lead-system run devomega-complete.tar.gz
 ├── artifacts/api-server/src/          ← All routes + scrapers (Express)
 │   ├── app.ts, index.ts
 │   ├── routes/ (20 route files)
